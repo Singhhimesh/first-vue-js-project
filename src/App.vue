@@ -1,15 +1,26 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <Home name = "Suraj Kashyap"/>
+  <pro-suraj v-bind:name="userName" />
+  <style-binding />
+  <my-component />
 </template>
 
 <script>
-import Home from "./components/Home.vue";
+// import Home from "./components/Home.vue";
+// import MyComponent from "./components/mycom.vue";
+// import StyleBinding from "./components/ClassAndStylebinding.vue";
+import ProSuraj from "./components/Property.vue";
 
 export default {
   name: "App",
   components: {
-    Home,
+    // Home,
+    // MyComponent,
+    // StyleBinding,
+    ProSuraj,
+  },
+  data() {
+    return { userName: "Akash Kashyap" };
   },
 };
 </script>
