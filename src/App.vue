@@ -1,8 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <pro-suraj v-bind:name="userName" />
-  <style-binding />
-  <my-component />
+  <pro-suraj v-bind:users="users" />
 </template>
 
 <script>
@@ -20,7 +18,15 @@ export default {
     ProSuraj,
   },
   data() {
-    return { userName: "Akash Kashyap" };
+    return {
+      users: [
+        { name: "Surajkashyap", email: "surajkashyap9911@gmail.com" },
+        { name: "Akash kashyap", email: "akashkashyap@gmail.com" },
+        { name: "Laxmi kashyap", email: "laxmikashyap@gmail.com" },
+        { name: "Maa", email: "maa@gmail.com" },
+        { name: "Papa", email: "papa@gmail.com" },
+      ],
+    };
   },
 };
 </script>
